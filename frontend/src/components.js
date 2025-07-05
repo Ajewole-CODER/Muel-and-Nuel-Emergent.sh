@@ -215,11 +215,11 @@ export const Programs = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Our Academic Programs</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive education programs designed to nurture every child's potential from early years through secondary education.
+              Following the Nigerian Basic Education Curriculum with integrated vocational skills and practical training as mandated by the Federal Government's 2025 educational reforms.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {programs.map((program, index) => (
               <div key={index} className="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <img 
@@ -231,12 +231,60 @@ export const Programs = () => {
                   <div className="text-blue-600 text-sm font-semibold mb-2">{program.age}</div>
                   <h3 className="text-xl font-bold text-gray-800 mb-3">{program.title}</h3>
                   <p className="text-gray-600 mb-4">{program.description}</p>
+                  {program.subjects && (
+                    <div className="mb-4">
+                      <h4 className="text-sm font-semibold text-gray-700 mb-2">Key Subjects:</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {program.subjects.map((subject, idx) => (
+                          <span key={idx} className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">
+                            {subject}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   <button className="text-blue-600 hover:text-blue-800 font-semibold">
                     Learn More →
                   </button>
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="mt-16 bg-blue-50 rounded-lg p-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">2025 Educational Reforms</h3>
+            <p className="text-gray-600 mb-6">
+              In line with Federal Government directives, all students must select at least two vocational skills during their basic education:
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 text-sm">
+              <div>
+                <h4 className="font-semibold text-gray-700 mb-2">Technical Skills</h4>
+                <ul className="text-gray-600 space-y-1">
+                  <li>• Digital Literacy & Robotics</li>
+                  <li>• GSM Repairs</li>
+                  <li>• CCTV Installation</li>
+                  <li>• Solar Installation</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-700 mb-2">Creative & Service</h4>
+                <ul className="text-gray-600 space-y-1">
+                  <li>• Event Management</li>
+                  <li>• Interior Design</li>
+                  <li>• Hairstyling & Makeup</li>
+                  <li>• Garment Making</li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-semibold text-gray-700 mb-2">Agriculture & Trade</h4>
+                <ul className="text-gray-600 space-y-1">
+                  <li>• Crop Production</li>
+                  <li>• Poultry & Livestock</li>
+                  <li>• Bakery & Confectioneries</li>
+                  <li>• Plumbing & Tiling</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
