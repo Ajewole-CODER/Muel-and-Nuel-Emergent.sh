@@ -180,21 +180,31 @@ export const Programs = () => {
   const programs = [
     {
       title: "Early Years Foundation",
-      description: "Nursery and Pre-primary education focusing on foundational skills",
+      description: "Nursery and Pre-primary education with play-based learning and foundational literacy",
       age: "Ages 2-5",
-      image: "https://images.unsplash.com/photo-1574130303188-31a915382726"
+      image: "https://images.unsplash.com/photo-1574130303188-31a915382726",
+      subjects: ["Basic Literacy", "Numeracy", "Social Skills", "Creative Arts", "Physical Development"]
     },
     {
-      title: "Primary Education",
-      description: "Comprehensive primary education with strong academic foundation",
+      title: "Basic Education (Primary)",
+      description: "Primary 1-6 following the Nigerian Basic Education Curriculum with vocational skills",
       age: "Ages 6-11",
-      image: "https://images.pexels.com/photos/7616608/pexels-photo-7616608.jpeg"
+      image: "https://images.pexels.com/photos/7616608/pexels-photo-7616608.jpeg",
+      subjects: ["English Language", "Mathematics", "Basic Science", "Social Studies", "History", "Religious Studies", "Vocational Skills"]
     },
     {
-      title: "Secondary Education",
-      description: "Preparing students for WAEC, NECO, and university entrance",
-      age: "Ages 12-18",
-      image: "https://images.pexels.com/photos/8532850/pexels-photo-8532850.jpeg"
+      title: "Junior Secondary Education",
+      description: "JSS 1-3 with integrated vocational training and practical skills development",
+      age: "Ages 12-14",
+      image: "https://images.pexels.com/photos/8532850/pexels-photo-8532850.jpeg",
+      subjects: ["Core Subjects", "Agricultural Science", "Computer Studies", "Business Studies", "French", "Vocational Skills (2 minimum)"]
+    },
+    {
+      title: "Senior Secondary Education",
+      description: "SSS 1-3 with WAEC/NECO preparation and specialized subject combinations",
+      age: "Ages 15-18",
+      image: "https://images.unsplash.com/photo-1653250198415-6bae22e0c796",
+      subjects: ["Science Track", "Commercial Track", "Arts Track", "Technical Track", "History (Compulsory)"]
     }
   ];
 
