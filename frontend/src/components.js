@@ -297,33 +297,57 @@ export const Facilities = () => {
   const facilities = [
     {
       title: "Modern Classrooms",
-      description: "Well-equipped classrooms with interactive learning tools",
-      icon: "🏫"
+      description: "44 newly constructed and 1,084 renovated classrooms equipped with modern furniture and teaching aids",
+      icon: "🏫",
+      details: "Air-conditioned, well-lit spaces with interactive boards and ergonomic furniture"
+    },
+    {
+      title: "ICT Laboratory",
+      description: "Fully equipped computer lab with 2,600 computer devices and high-speed internet access",
+      icon: "💻",
+      details: "Latest computers, robotics kits, and software for digital literacy programs"
     },
     {
       title: "Science Laboratories",
-      description: "Fully equipped labs for Physics, Chemistry, and Biology",
-      icon: "🔬"
+      description: "Comprehensive labs for Physics, Chemistry, Biology, and Agricultural Science practicals",
+      icon: "🔬",
+      details: "Modern equipment for hands-on learning and WAEC/NECO practical examinations"
     },
     {
-      title: "Computer Lab",
-      description: "State-of-the-art computer laboratory with internet access",
-      icon: "💻"
-    },
-    {
-      title: "Library",
-      description: "Extensive collection of books and digital resources",
-      icon: "📚"
+      title: "School Library",
+      description: "Extensive collection of books, journals, and digital resources for research",
+      icon: "📚",
+      details: "Over 5,000 books, e-library access, and quiet study spaces"
     },
     {
       title: "Sports Complex",
-      description: "Multi-purpose sports facilities for various activities",
-      icon: "⚽"
+      description: "Multi-purpose sports facilities for football, basketball, volleyball, and athletics",
+      icon: "⚽",
+      details: "Football pitch, basketball court, volleyball court, and 400m track"
     },
     {
-      title: "Art Studio",
-      description: "Creative spaces for arts and crafts activities",
-      icon: "🎨"
+      title: "Vocational Workshop",
+      description: "Dedicated spaces for practical training in the 15 mandated vocational skills",
+      icon: "🔧",
+      details: "Equipment for plumbing, electrical work, garment making, and agricultural processing"
+    },
+    {
+      title: "Art & Music Studio",
+      description: "Creative spaces for arts, crafts, music, and cultural activities",
+      icon: "🎨",
+      details: "Musical instruments, art supplies, and performance spaces"
+    },
+    {
+      title: "Hostel Facilities",
+      description: "Modern boarding facilities with 240 new toilets and renovated hostels",
+      icon: "🏠",
+      details: "Comfortable dormitories, dining hall, and recreational areas"
+    },
+    {
+      title: "Health Center",
+      description: "On-campus medical facility with qualified health personnel",
+      icon: "🏥",
+      details: "First aid, health screenings, and emergency medical care"
     }
   ];
 
